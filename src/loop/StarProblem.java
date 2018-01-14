@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 /**
+ * Task: for given n output n*n square
  * For n = 5:
  *
  *  *****
@@ -8,13 +9,6 @@ import java.util.Scanner;
  *  ***++
  *  **+++
  *  *++++
- *
- *
- *  *****
- *  +***+
- *  ++*++
- *  +++++
- *  +++++
  *
  */
 public class StarProblem
@@ -24,8 +18,8 @@ public class StarProblem
     {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
-        for(int row = 0; row < n; row++) {
-            for(int column = 0; column < n; column++) { // line or row
+        for(int row = 0; row < n; row++) { // iterating over all rows
+            for(int column = 0; column < n; column++) { // iterating over columns on the row 'row'
                 if(column < n-row) {
                     System.out.print("*");
                 } else {

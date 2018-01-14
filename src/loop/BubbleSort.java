@@ -14,8 +14,8 @@ public class BubbleSort
                     array[j] = y;
                     array[j+1] = x;
                 }
-            }
-        }
+            }// the result of this loop is max element would be at the end
+        } // you need to execute n times nested loop to find max element, then pre-max element and so on
         System.out.println(Arrays.toString(array));
     }
 }
